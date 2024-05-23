@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/ex_loop_cap5.css">
+    <!-- link:css -> cria o link automaticamente -->
+    
+    <title>Exercicio de loop capítulo 5 </title>
+</head>
+<body>
+    <!-- Começa o código em html -->
+    <script>
+        // aqui começa o código em javascript
+        // definindo as varíaveis 
+
+        var ano_copa=1930;
+        cont=4; 
+        while(ano_copa<=2024){
+            rest4=ano_copa % 4;
+            if(cont==4){
+                document.write("<b class='test'>"+ano_copa+ " Tem Copa!!!!!! <br> </b>");
+                cont=0;
+            }
+            else{
+                document.write(ano_copa+" Não tem Copa! <br>");
+            }
+            ano_copa=ano_copa+1;
+            cont=cont+1;
+        }
+    </script>
+    
+</body>
+</html>

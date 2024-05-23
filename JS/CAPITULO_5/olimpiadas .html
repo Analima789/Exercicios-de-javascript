@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <title>Anos de Olimpiada</title>
+</head>
+<body>
+    <script>
+        /*exercicio do capítulo 5  */
+        /* funções: */
+
+        function pulaLinha() {
+            document.write ("<br>");
+        }
+
+        var mostra=function(frase) {
+            document.write(frase + "<br>");
+        }
+
+        var anoComoTexto=prompt("Informe o ano incial:");
+        var anoDeO=parseInt(anoComoTexto);
+        var anoLimite= prompt("Qual é o ano limite?");
+
+        
+        mostra("<b>");
+        document.write(anoDeO);
+
+        while(anoDeO<=anoLimite){
+            mostra("O ano "+anoDeO+" tem OLIMPIADA!");
+            anoDeO=4+anoDeO;
+        }
+
+        mostra(anoDeO+"esse é o valor após a soma!");
+        mostra("</b>");
+        mostra("<p>");
+        mostra("Ufa!Esses foram os anos de OLIMPIADA até" + anoLimite);
+        mostra("</p>");
+    </script> 
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+        

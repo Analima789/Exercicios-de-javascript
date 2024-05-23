@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <title>IMC</title>
+</head>
+<body>
+   <script>
+    /* capitulo 4.4
+    funções:  */
+
+    function pulaLinha() {
+        document.write ("<br>");
+    } 
+
+    function mostra(frase) {
+        document.write (frase);
+        pulaLinha();
+    };
+
+    
+    var calculaIMC= function (alturaDoUsuario,pesoDoUsuario) {
+            var imcDoUsuario= pesoDoUsuario/ (alturaDoUsuario *alturaDoUsuario);
+            return imcDoUsuario;
+    }
+
+
+    /* varíaveis: */
+    var alturaDoUsuario= prompt("Qual a Altura do Usuario?");
+    var pesoDoUsuario= prompt("Qual o Peso do Usuario");
+    var imcDoUsuario = calculaIMC(alturaDoUsuario,pesoDoUsuario);
+    mostra ("<b>");
+   
+
+    if(imcDoUsuario < 18.5) {
+        mostra("Seu IMC indica que você está abaixo do peso.");
+    }
+
+    if(imcDoUsuario > 35) {
+        mostra("Seu IMC indica que você está acima do peso.");
+    }
+
+    if(imcDoUsuario >= 18.5 && imcDoUsuario <= 35){
+        mostra("OK!Seu IMC está entre os dois limites");
+    }
+
+    mostra("A sua altura é =" +alturaDoUsuario);
+    mostra("O seu peso é =" +pesoDoUsuario);
+    mostra("O seu imc é"+math.round(imcDoUsuario));
+    mostra ("</b>");
+    
+    </script>
+</body>
+</html>

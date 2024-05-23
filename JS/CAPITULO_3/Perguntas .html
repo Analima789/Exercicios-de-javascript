@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <title>Perguntas</title>
+</head>
+<body>
+    <script>
+    //Capítulo 3.4:
+
+    //definindo funções:
+    var mostra = function(frase) {
+        document.write (frase);
+        pulaLinha();
+    };
+
+    var pulaLinha = function(){
+        document.write("<br>");
+    };
+
+    //A função mostra tem parametro
+
+    //definindo varíaveis:
+    var nome= prompt("Olá, Qual o seu nome?");
+    //mostrando os resultados dos úsuarios:
+    mostra ("<b>");
+    mostra ("Bem vindo a ETEC, "+nome );
+    mostra ("</b>");
+    pulaLinha;
+
+    //PROMPT = RECEBE OS DADOS DO USUARIO E ARMAZENA
+    var idade= prompt("Quantos anos você tem? ");
+
+    //mostrando os resultados dos úsuarios:
+    mostra ("<y>");
+    mostra (nome +"Tem "+idade+" anos. ");
+    mostra ("</y>");
+    </script>
+
+</body>
+</html>

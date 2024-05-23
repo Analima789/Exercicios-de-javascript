@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>funções</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+<body>
+    <script>
+        //CAPÍTULO 3.7:
+        //definindo funções:
+        var mostra = function(frase) {
+        document.write (frase);
+        pulaLinha();
+        };
+
+        var pulaLinha = function(){
+        document.write("<br>");
+        };
+
+        var primeira = function() {
+            mostra ("1 - antes");
+            segunda();
+            pulaLinha;
+            mostra("1 - depois");
+        };
+
+        var segunda = function() {
+            mostra("2 - antes");
+            pulaLinha;
+            terceira();
+            pulaLinha;
+            mostra("2 - depois");
+        };
+
+        var terceira = function() {
+            mostra("3");
+        };
+
+        primeira();  
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <title>Meu Imc </title>
+</head>
+<body>
+    <script>
+    //Capitulo 3.3:
+    //DEFININDO FUNÇÃO:
+
+    var pulaLinha = function(){
+        document.write("<br>");
+    };
+
+    var mostra = function (frase) {
+        document.write (frase);
+        pulaLinha ();
+    }; 
+
+    //A função mostra tem parametro
+
+    var calculaIMC= function(altura,peso) {
+            var imc = peso/ (altura*altura);
+            return imc;
+        };
+
+    //VARÍAVEIS:
+        var peso=72;
+        var altura= 1.65;
+        var imc = calculaIMC(altura*peso);
+        var imc= calculaIMC(altura,peso);
+
+    //MOSTRANDO AS VARÍAVEIS:
+
+        mostra ("<b>");
+        mostra ("Peso = "+peso);
+        mostra ("</b>");
+        pulaLinha;
+        mostra ("<y>");
+        mostra ("Altura= " +altura);
+        mostra ("</y>");
+        pulaLinha;
+        mostra ("<b>");
+        mostra ("O meu IMC é= "+Math.round(imc));
+        mostra ("</b>");
+        // OU mostra("<b> o meu IMC é= </b>"+Math.round(calculaIMC(altura,peso)));
+
+    </script>
+</body>
+</html>

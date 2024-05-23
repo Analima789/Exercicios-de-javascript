@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seno</title>
+</head>
+<body>
+
+    <canvas id="tela" widht="600" height="400"></canvas>
+    <script>
+        var tela = document.getElementById("tela");
+        var c= tela.getContext("2d");
+
+        c.fillStyle="blue";
+
+        var funcaoQuadratica = function (x) {
+            return 0.01 * x * x;
+        }
+
+        var desenhaFuncao = function (funcaoMatematica) {
+            for(var x=0; x<600; x=x+1) {
+                var y= funcaoMatematica(x);
+                console.log("Para x=" +x+ ", o y vale" +y);
+
+                c.beginPath();
+                c.arc(x,300-y,2,0,2*Math.PI);
+                c.fill();
+            }
+        }
+
+        desenhaFuncao(funcaoQuadratica);
+
+        var funcao1 = function (x) {
+            return 0.01 * x * x;
+        }
+
+        var desenhaFuncao = function (funcaoMatematica) {
+            for(var x=0; x<600; x=x+1) {
+                var y= funcaoMatematica(x);
+                console.log("Para x=" +x+ ", o y vale" +y);
+
+                c.beginPath();
+                c.arc(x,400-y,2,0,2*Math.PI);
+                c.fill();
+            }
+         }
+
+       desenhaFuncao(funcao1);
+     
+    
+
+    </script>
+    
+</body>
+</html>

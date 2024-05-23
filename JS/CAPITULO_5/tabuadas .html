@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <title>Tabuada</title>
+</head>
+<body>
+    <script> 
+    /* 5.6 capitulo: */
+     
+    var mostra=function(frase){
+        document.write(frase + "<br>");
+    };
+    
+    mostra("<b>");
+    
+    var multiplicador=1;
+    var tabuada=prompt("Qual a tabuada que deseja fazer?"); 
+    var contador=1;
+    mostra("A tabuada do número " + tabuada + " é:");
+
+    while (contador <=10)  {
+        mostra(tabuada+"."+contador+ "=" +contador * tabuada);
+        contador= contador+1;
+    }     
+
+    mostra("</b>");
+
+    
+
+    </script>
+</body>
+</html>

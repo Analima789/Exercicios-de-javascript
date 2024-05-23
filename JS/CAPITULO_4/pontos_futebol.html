@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <title>Pontos Futebol</title>
+</head>
+<body>
+    <script>
+    /*capitulo 4.1 */
+    /* funções: */
+    function pulaLinha() {
+        document.write ("<br>");
+    } 
+
+    function mostra(frase) {
+        document.write (frase);
+        pulaLinha();
+    };
+
+    var calculaPontos = function (vitorias,empates) {
+        return (vitorias*3) + empates - derrota*(-1) ;
+        parseInt(empates);
+       }
+
+    var calculaPontos_adversario = function (vitorias_adversario,empates_adversario) {
+        return (vitorias_adversario*3) + empates_adversario - derrotas_adversario*(-1) ;
+        parseInt(empates_adversario);
+       }
+
+    /* definição de variáveis e entrada de dados: */
+    var vitorias= prompt("Quantos jogos o CDC Futebol Clube venceu?");
+    var empates= prompt("Quantos jogos o CDC Futebol Clube empatou?");
+    var derrota=prompt("Quantas derrotas o CDC Futebol Clube?");
+    var pontos= calculaPontos(vitorias,empates);
+
+    /* outro time */
+    var vitorias_adversario= prompt("Quantos jogos o adversario venceu?");
+    var empates_adversario= prompt("Quantos jogos o adversario empatou?");
+    var derrotas_adversario=prompt("Quantas derrotas o adversario teve?");
+    var pontos_adversario= calculaPontos_adversario(vitorias_adversario,empates_adversario);
+    
+    /* calculos */
+    /* maracutaia para conversão de números
+    var emp= empates *1; */
+    var pontos= calculaPontos(vitorias,empates);
+    var pontos_adversario= calculaPontos_adversario(vitorias_adversario,empates_adversario);
+
+    /* if é a palavra chave do JAVASCRIPT: */
+    
+    mostra("<b>");
+    if(pontos > 28) {
+        mostra ("Nosso time está indo MELHOR que os livros velhos!");
+    }
+
+    if(pontos < 28) {
+        mostra("nosso time está indo PIOR que os livros velhos!");
+    }
+
+    if(pontos == 28) {
+     mostra("Nosso time está EMPATADO com os livros velhos!");
+    }
+    mostra("</b>");
+
+    /* mostrando (saída dos) resultados */
+
+    mostra("<b>");
+    mostra("Nosso time tem= " +vitorias+ " vitorias!");
+    mostra("Nosso time tem= " +empates+ " empates!");
+    mostra("Nosso time tem= " +derrota+ " derrotas!");
+    mostra("Nosso time tem = " +pontos+  " pontos!");
+    mostra("</b>");
+
+    /* mostrando resultados: */
+
+    mostra("<p>");
+    mostra("Nosso adversario tem= " +vitorias_adversario+ " vitorias!");
+    mostra("Nosso adversario tem= " +empates_adversario+ " empates!");
+    mostra("Nosso adversario tem= " +derrotas_adversario+ " derrotas!");
+    mostra("Nosso adversario tem = " +pontos_adversario+  " pontos!");
+    mostra("</p>");
+
+    /* if é a palavra chave do JAVASCRIPT: */
+    
+    mostra("<b>");
+    if(pontos_adversario> 28) {
+        mostra ("Nosso adversario está indo MELHOR que os livros velhos!");
+    }
+
+    if(pontos_adversario < 28) {
+        mostra("Nosso adversario está indo PIOR que os livros velhos!");
+    }
+
+    if(pontos_adversario == 28) {
+     mostra("Nosso adversario está EMPATADO com os livros velhos!");
+    }
+    mostra("</b>");
+
+    </script>
+</body>
+</html>

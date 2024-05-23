@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <title>Anos de Copa</title>
+</head>
+<body>
+    <script>
+        /*capitulo 5.1 */
+        /* funções: */
+        function pulaLinha() {
+            document.write ("<br>");
+        } 
+
+    
+        //2014+4 anos= proxima copa
+        //maneira trabalhosa:
+
+       /*  var anoDeCopa=1930;
+        alert(anoDeCopa+"tem copa");
+        pulaLinha;
+
+        anoDeCopa= anoDeCopa+4;
+        alert(anoDeCopa+"tem copa");
+        pulaLinha;
+
+        anoDeCopa= anoDeCopa+4;
+        alert(anoDeCopa+"tem copa");
+         pulaLinha;
+
+        anoDeCopa= anoDeCopa+4;
+        alert(anoDeCopa+"tem copa");
+        pulaLinha;
+        */
+
+        //while infinito:
+
+       // while(true) /* enquanto for verdadeiro */{
+           // alert (anoDeCopa + " tem copa!"); 
+           // anoDeCopa=anoDeCopa+4; /* para contar os anos de copa +4  */
+       // }  //repetição  
+
+        //guarda o resultado na variavel anoDeCopa
+        // loop infinito= laço
+
+            var mostra = function(frase) {
+                document.write(frase + "<br>");
+            }
+
+            var anoComoTexto=prompt("Informe o ano incial:");
+            var anoDeCopa=parseInt(anoComoTexto);
+            var anoLimite= prompt("Qual é o ano limite?");
+
+            mostra("<b>");
+                
+            while(anoDeCopa<=anoLimite){
+                mostra("O ano"+anoDeCopa+" tem copa!");
+                anoDeCopa=4+anoDeCopa;
+        }
+            mostra(anoDeCopa+"esse é o valor após a soma!");
+            mostra("</b>");
+            mostra("<p>");
+            mostra("Ufa!Esses foram os anos de copa até" +anoLimite);
+            mostra("</p>");
+    </script> 
+    
+</body>
+</html>

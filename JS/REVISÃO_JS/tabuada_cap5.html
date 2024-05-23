@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/tabuada_cap5.css">
+  
+    <title>tabuadaszinhas</title>
+</head>
+<body>
+    <script>
+        /*definindo as variáveis*/
+        var i=0;
+        /*leitura da variável tab*/
+        var tab = parseInt(prompt('Digite a tabuada desejada='));
+        /*estrutura de repetição for*/
+        ant=tab-1;
+        document.write("A tabuada antecessessora é " +ant+"<br><br>");
+        for(i=0;i<=10;i++){
+            document.write(ant+" X "+i+"=<b class='result0'> "+ant*i+"</b><br>"); 
+        }
+        document.write("<br> A tabuadinha escolhidinha foi " +tab+"<br><br>");
+
+        for(i=0;i<=10;i++){
+            document.write(tab+" X "+i+"=<b class='result1'> "+tab*i+"</b><br>"); 
+        }
+        suc =tab+1;
+        document.write("<br> A tabuadinha sucessorinha é "+suc+"<br><br>"); 
+        for(i=0;i<=10;i++){
+            document.write(suc+" X "+i+"=<b class='result2'> "+suc*i+"</b><br>"); 
+        }
+
+        
+    </script>
+    
+</body>
+</html>

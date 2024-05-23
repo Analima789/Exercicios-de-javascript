@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/media_idades.css">
+
+    <title>Calculo de idades</title>
+</head>
+<body>
+    <script>
+
+        /* definição da função mostra */
+
+         function mostra(frase){
+            document.write(frase);
+         }
+
+        /* definição de varíaveis e entrada de valores */
+        
+        var idadeAdriano = parseInt(prompt("Entre com a idade do Adriano:"));
+       // var idadePaulo= 10;
+        var idadePaulo = parseInt(prompt("Entre com a idade do Paulo:"));
+       // var idadeSuzana= 10;
+        var idadeSuzana = parseInt(prompt("Entre com a idade da Suzana:")); 
+
+
+        /* calculo da média */
+
+        var media= (idadeAdriano + idadePaulo + idadeSuzana) /3;
+        
+        /* saída de resultado da média */
+
+        mostra("A idade do Adriano é: ");
+        mostra(idadeAdriano);
+        mostra(" <br> A idade de Paulo é: ");
+        mostra(idadePaulo);
+        mostra("<br> A idade da Suzana é: ");
+        mostra(idadeSuzana);
+        mostra("<br> A media das idades é: ");
+        mostra(media);
+
+
+
+    </script>
+    
+</body>
+</html>

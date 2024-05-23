@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <title>Tabuada</title>
+</head>
+<body>
+    <script> 
+     
+    var mostra=function(frase){
+        document.write(frase + "<br>");
+    };
+    
+    mostra("<b>");
+    
+    var multiplicador=1;
+    var tabuada=prompt("Qual a tabuada que deseja fazer?"); 
+    mostra("A tabuada do número " + tabuada + " é:");
+
+    for (var multiplicador=1; multiplicador <=10; multiplicador++)  {
+    // inicialização;condições para repetir;modificação do valor
+        mostra(tabuada+"."+multiplicador+ "=" +multiplicador * tabuada);
+       
+    }     
+
+    mostra("</b>");
+
+    
+
+    </script>
+</body>
+</html>

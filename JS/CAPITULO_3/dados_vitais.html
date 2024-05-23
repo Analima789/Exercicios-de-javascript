@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <title>Dados Vitais </title>
+</head>
+<body>
+    <script>
+        //CAPÍTULO 3.6:
+        //definindo funções:
+        var pulaLinha = function() {
+        document.write("<br>");
+     };
+
+        var mostra= function (frase) {
+        document.write(frase);
+        pulaLinha();
+     };
+
+        var calculaDiasDeVida= function (idade) {
+            var dias= idade*365;
+            return dias;
+            calculaBatimentos(dias);
+    };
+
+        var calculaBatimentos = function (dias) {
+            var batimentos= dias * 24 * 60 * 80;
+            return batimentos;
+    };
+
+        //A função mostra tem parametro
+        //definindo varíaveis:
+        var idade= 34;
+        var idade= prompt ("Quantos anos você tem?");
+        var dias= calculaDiasDeVida(idade);
+
+        //mostrando os resultados:
+        mostra ("<b>");
+        mostra (" Você já viveu "+ dias+ " dias de vida ");
+        mostra ("</b>");
+        pulaLinha;
+        mostra ("<y>");
+        mostra("Isso significa que você precisa aproveitar mais cada dia ");
+        mostra ("</y>")
+        pulaLinha;
+
+        //definindo varíavel de batimentos cardíacos
+        var batimentos= calculaBatimentos(dias);
+ 
+        //mostrando os resultados 
+        pulaLinha;
+        mostra ("<b>");
+        mostra ("Seu coração já bateu " + Math.round(batimentos)
+                  +"vezes. Haja coração! ");
+        mostra ("</b>");
+        
+    </script>
+    
+</body>
+</html>

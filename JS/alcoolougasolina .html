@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Álcool ou Gasolina?</title>
+</head>
+<body>
+    <h3> Álcool ou Gasolina? </h3>
+
+
+    <script>
+        var pulaLinha = function(){
+        document.write("<br>");
+    };
+       var tanque=40;
+       var caminhoComGasolina=480;
+       var caminhoComAlcool=300;
+       var total=tanque/caminhoComGasolina;
+       var consumoDeAlcool= tanque/caminhoComAlcool;
+       var precoDaGasolina=2.90;879
+       var precoDoAlcool=2.40;
+       var precoporKilometro= precoDaGasolina/precoDoAlcool;
+
+
+       document.write("O Tanque tem " +tanque);
+       document.write ("<br>");
+       document.write("O caminho com gasolina é "+caminhoComGasolina );
+       document.write ("<br>");
+       document.write("O caminho com Alcool é " +caminhoComAlcool);
+       document.write ("<br>");
+       document.write("O consumo de gasolina é " +Math.round(total).toFixed(2));
+       document.write ("<br>");
+   
+    </script>
+
+
+    <br>
+     <h3> Vamos calcular o consumo de Alcool:</h3>
+
+
+    <script>
+       document.write("O consumo de Alcool é " +Math.round(consumoDeAlcool).toFixed(2));
+    </script>
+
+
+    <h3> Desafio:</h3>
+
+
+    <script>
+         document.write("O preço da gasolina é "+precoDaGasolina );
+         document.write ("<br>");
+         document.write("O preço do Alcool é "+precoDoAlcool );
+         document.write ("<br>");
+         document.write("O preço por Kilometro é "+Math.round(precoporKilometro).toFixed(2));
+    </script>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/canvas_loops.css">
+    <title>Canvas Loop</title>
+</head>
+<body>
+
+
+    <canvas id="tela" width="600" height="400"></canvas>
+
+
+    <script>
+
+
+        // desenhando o Quadrado Verde:
+
+
+        var desenhaQuadradoVerde = function(x,y)
+        // função que desenha quadrados coloridos em 2D
+        // ou function desenhaQuadradoVerde(x,y)
+        {
+            var tela= document.getElementById("tela");
+            var c = tela.getContext("2d");
+            //desenhando o quadrado na área específica
+
+            /* preenchimento do retangulo com a cor verde 
+            e as medidas 50px lado e 50px altura*/
+            c.fillStyle="green";
+            c.fillRect(x,y,50,50);
+
+            /*preenchimento da linha do retângulo*/
+
+            c.strokeStyle="black";
+            //desenha um retangulo de contorno preto
+            c.strokeRect(x,y,50,50);
+
+        }; //fim da função
+
+        /* chamando a função */
+
+        desenhaQuadradoVerde(0,0);
+         
+
+        /* ou
+
+        
+        for(var x=0;x <600;x=x+50) {
+         desenhaQuadradoVerde(x,0);
+       }
+
+
+       */
+
+       
+
+    </script>
+
+</body>
+</html>

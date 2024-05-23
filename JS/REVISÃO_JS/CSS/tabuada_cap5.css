@@ -1,0 +1,18 @@
+body{
+    background-color: rgb(102, 0, 255);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    color: pink;
+}
+
+.result0{
+    color: rgb(252, 49, 49);
+}
+
+.result1{
+    color: rgb(216, 93, 120);
+}
+
+.result2{
+    color: rgb(233, 120, 28);
+}

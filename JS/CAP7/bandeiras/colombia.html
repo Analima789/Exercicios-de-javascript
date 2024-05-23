@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/colombia.css">
+    <title>Colombia bandeira</title>
+</head>
+<body>
+
+    <canvas id="tela" width="600" height="400"></canvas>
+    
+    <script>
+        /* definição das varíaveis de posicionamento da tela */
+
+        var tela= document.getElementById ("tela");
+
+        var c=tela.getContext("2d");
+
+          /* forma de um retangulo */
+
+        c.fillStyle="yellow";
+        c.fillRect(0,0,600,200);
+
+        
+        c.fillStyle="blue";
+        c.fillRect(0,200,600,100);
+
+
+      c.fillStyle="red";
+      c.fillRect(0,300,600,100);
+
+    </script>
+
+    
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/laos.css">
+    <title>banderinha di madagascarzinho</title>
+</head>
+<body>
+    <canvas id="tela" width="600" height="400"></canvas>
+    
+    <script>
+        /* definição das varíaveis de posicionamento da tela */
+
+        var tela= document.getElementById ("tela");
+
+        var c=tela.getContext("2d");
+
+          /* forma de um retangulo */
+
+        c.fillStyle="red";
+        c.fillRect(0,0,600,100);
+
+        c.fillStyle="#00009C";
+        c.fillRect(0,100,600,200);
+
+        c.fillStyle="red";
+        c.fillRect(0,280,600,100);
+
+        /* forma de um círculo */           
+
+        c.fillStyle="white";
+        c.beginPath();
+        c.arc(300,200,70,0,2*3.14);
+        c.fill();
+
+
+
+    
+
+    </script>  
+</body>
+</html>

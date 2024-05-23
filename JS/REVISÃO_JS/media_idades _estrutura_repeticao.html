@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/media_idades_estrtura_repeticao.css">
+
+    <title>Calculo de media idades estrutura de repetição</title>
+</head>
+<body>
+    <script>
+
+        /* definição da função mostra */
+
+         function mostra(frase){
+            document.write(frase);
+         }
+
+        /* definição de varíaveis e entrada de valores */
+        
+        var soma=0;
+        var idade = parseInt(prompt("Entre com a idade ou (digite 0 para finalizar) :"));
+        var estudante=0;
+        var media_idade=0;
+      
+        /* estrutura de repetição do while */
+
+        while (idade>0) {
+          /*  mostra("A idade digitada foi de =");
+            mostra(idade);
+            document.write("<br><br>");*/
+
+            soma=soma+idade;
+         /*   mostra("A soma calculada foi de =");
+            mostra(soma);
+            document.write("<br><br>");*/
+
+
+            estudante=estudante+1;
+          /*  mostra("O número de estudantes foi de =");
+            mostra(estudante);
+            document.write("<br><br>"); */
+
+            idade = parseInt(prompt("Entre com a idade ou (digite 0 para finalizar) :"));
+        }
+        document.write("A soma das idades foi= ");
+        mostra(soma);
+        document.write("<br><br>");
+        document.write("quantidade de estudantes= ");
+        mostra(estudante);
+        document.write("<br><br>");
+
+        /*calculo da media*/ 
+
+        media_idade=(soma/estudante);
+
+        /*saida do resultado da media*/
+        document.write("A media das idades dos estudandes é= ");
+        mostra(media_idade);
+
+    </script>
+    
+</body>
+</html>

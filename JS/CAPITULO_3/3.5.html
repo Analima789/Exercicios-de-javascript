@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <title>Capítulo 3.5</title>
+</head>
+<body>
+    <script>
+        //CAPÍTULO 3.5:
+        //definindo funções:
+        var mostra = function(frase) {
+        document.write (frase);
+        pulaLinha();
+        };
+
+        //A função mostra tem parametro
+
+        var calculaIMC= function(altura,peso) {
+            var imc = peso/ (altura*altura);
+            return imc;
+        };
+
+        var pulaLinha = function(){
+        document.write("<br>");
+        };
+        
+        //definindo varíaveis:
+        
+        var alturaDoUsuario= prompt ("Olá,Qual é a sua altura?");
+        var pesoDoUsuario= prompt ("E o seu peso?");
+        var imcDoUsuario= calculaIMC(alturaDoUsuario,pesoDoUsuario);
+            mostra ("<y>");
+            mostra (" O seu imc é " + Math.round (imcDoUsuario)  );
+            mostra ("</y>");
+        pulaLinha;
+            var nome= prompt("Olá, Qual o seu nome?");
+        mostra ("<b>");
+        mostra ("Bem vindo a ETEC, "+nome);
+        mostra ("</b>");
+
+    </script>
+    
+</body>
+</html>

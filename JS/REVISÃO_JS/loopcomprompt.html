@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/loop_dentro_loop.css">
+    <title>loop dentro loop</title>
+</head>
+<body>
+    <script>
+    /* definição da função mostra */
+
+    function mostra(frase){
+       document.write(frase);
+    }
+
+   /* definição de varíaveis e entrada de valores */
+   
+   var i=0;
+   var j=0;
+   var m= prompt("Qual o número de linhas:"); //primeira linha e ultima linha
+   var k= prompt("Qual o numero de colunas?"); // linha com preenchimento de espaços para o lado direito
+
+   /* estrtura de repetição for*/
+
+   for (i=0;i<m;i++){
+   // mostra("passei aqui");
+        mostra("#"); // imprime ! do lado esquerdo
+       
+        if(i==0 || (i==m-1) ){
+            for(j=0;j<k;j++) {
+            mostra ("*");
+    } // fim for j
+        mostra("#");   
+    } //fim if -> verdade
+
+    else {
+       for(j=0;j<k*2;j++){
+            mostra("&nbsp");
+            // imprime espaço em branco 
+       } // fim for J 
+       mostra("#");   
+    }
+
+        mostra("<br>"); 
+
+    }
+   
+
+   </script>
+    
+</body>
+</html>

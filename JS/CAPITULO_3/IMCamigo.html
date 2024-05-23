@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <title>IMC Primo</title>
+</head>
+<body>
+    <script>
+
+
+    //CAPÍTULO 3.2:
+    //DEFININDO FUNÇÃO:
+
+
+    var pulaLinha= function () {
+        document.write ("<br>");
+    }
+
+
+    var mostra = function (frase) {
+        document.write (frase);
+        pulaLinha ();
+    }
+
+
+    //A função mostra tem parâmetro
+
+
+    var calculaIMC= function (altura,peso) {
+            var imc= peso/ (altura *altura);
+            return imc;
+        }
+
+
+    //VARIÁVEIS:
+        var pesoDoPrimo=83;
+        var alturaDoPrimo= 1.76;
+        var imcDoPrimo= calculaIMC(alturaDoPrimo,pesoDoPrimo);
+
+
+    //MOSTRANDO RESULTADOS:
+        mostra ("<b>");
+        mostra ("O IMC de meu primo é=" + imcDoPrimo);
+        mostra ("</b>");
+        pulaLinha;
+        mostra ("<y>");
+        mostra ("A altura do primo é =" +alturaDoPrimo);
+        mostra ("</y>");
+        pulaLinha;
+        mostra ("<b>");
+        mostra ("Ele ainda está " + (imcDoPrimo- 18.5)
+                + " pontos acima do limite da magreza. ");
+        mostra ("</b>");
+ 
+      </script>    
+   
+</body>
+</html>
+
+
